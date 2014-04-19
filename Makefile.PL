@@ -35,7 +35,6 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "DDP" => 0,
     "Test::More" => 0
   },
   "VERSION" => "0.001",
@@ -47,7 +46,6 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Alien::Base" => "0.002",
-  "DDP" => 0,
   "File::ShareDir" => "1.03",
   "File::Spec" => 0,
   "Path::Class" => "0.013",

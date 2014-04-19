@@ -44,14 +44,12 @@ my %module_build_args = (
     "bin/pdf2json"
   ],
   "test_requires" => {
-    "DDP" => 0,
     "Test::More" => 0
   }
 );
 
 
 my %fallback_build_requires = (
-  "DDP" => 0,
   "Test::More" => 0
 );
 
