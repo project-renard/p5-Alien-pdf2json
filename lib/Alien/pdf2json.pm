@@ -4,6 +4,12 @@ use strict;
 use warnings;
 
 use parent 'Alien::Base';
+use File::Spec;
+
+sub pdf2json_path {
+  my ($self) = @_;
+  File::Spec->catfile( $self->dist_dir , 'bin', 'pdf2json' );
+}
 
 1;
 
