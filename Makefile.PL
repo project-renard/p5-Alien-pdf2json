@@ -16,15 +16,19 @@ my %WriteMakefileArgs = (
   "CONFIGURE_REQUIRES" => {
     "Alien::Base" => "0.002",
     "ExtUtils::MakeMaker" => "6.30",
-    "File::ShareDir" => "1.03"
+    "File::ShareDir" => "1.03",
+    "Path::Class" => "0.013"
   },
   "DISTNAME" => "Alien-pdf2json",
-  "EXE_FILES" => [],
+  "EXE_FILES" => [
+    "bin/pdf2json"
+  ],
   "LICENSE" => "perl",
   "NAME" => "Alien::pdf2json",
   "PREREQ_PM" => {
     "Alien::Base" => "0.002",
     "File::ShareDir" => "1.03",
+    "Path::Class" => "0.013",
     "parent" => 0,
     "strict" => 0,
     "warnings" => 0
@@ -44,6 +48,7 @@ my %FallbackPrereqs = (
   "Alien::Base" => "0.002",
   "DDP" => 0,
   "File::ShareDir" => "1.03",
+  "Path::Class" => "0.013",
   "Test::More" => 0,
   "parent" => 0,
   "strict" => 0,
