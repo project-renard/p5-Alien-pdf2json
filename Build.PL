@@ -18,8 +18,7 @@ my %module_build_args = (
   "configure_requires" => {
     "Alien::Base" => "0.002",
     "ExtUtils::MakeMaker" => "6.30",
-    "File::ShareDir" => "1.03",
-    "Path::Class" => "0.013"
+    "File::ShareDir" => "1.03"
   },
   "dist_abstract" => "Alien package for the pdf2json PDF extraction library",
   "dist_author" => [
@@ -34,14 +33,11 @@ my %module_build_args = (
   "requires" => {
     "Alien::Base" => "0.002",
     "File::ShareDir" => "1.03",
-    "Path::Class" => "0.013",
     "parent" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "script_files" => [
-    "bin/pdf2json"
-  ],
+  "script_files" => [],
   "test_requires" => {
     "DDP" => 0,
     "Test::More" => 0

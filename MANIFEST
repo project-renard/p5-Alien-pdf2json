@@ -6,7 +6,6 @@ MANIFEST
 META.yml
 Makefile.PL
 README
-bin/pdf2json
 dist.ini
 inc/pdf2json-0.68-win32.zip
 inc/pdf2json-0.68.tar.gz
