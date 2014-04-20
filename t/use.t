@@ -5,11 +5,6 @@ use warnings;
 
 BEGIN{  use_ok 'Alien::pdf2json' }
 
-ok(1);
-
-done_testing;
-exit 0;
-
 
 my $p = Alien::pdf2json->new;
 
