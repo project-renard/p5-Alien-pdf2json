@@ -44,12 +44,14 @@ my %module_build_args = (
     "bin/pdf2json"
   ],
   "test_requires" => {
+    "IPC::Open3" => 0,
     "Test::More" => 0
   }
 );
 
 
 my %fallback_build_requires = (
+  "IPC::Open3" => 0,
   "Test::More" => 0
 );
 

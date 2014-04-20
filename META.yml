@@ -3,6 +3,7 @@ abstract: 'Alien package for the pdf2json PDF extraction library'
 author:
   - 'Zakariyya Mughal <zmughal@cpan.org>'
 build_requires:
+  IPC::Open3: 0
   Test::More: 0
 configure_requires:
   Alien::Base: 0.002
