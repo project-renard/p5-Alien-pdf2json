@@ -22,6 +22,7 @@ sub alien_do_commands {
 		if( $phase eq 'build' ) {
 			# extract ../inc/pdf2json-0.68-win32.zip
 			my $win32_build_zip = glob File::Spec->catfile( $dir, '..', 'inc', '*-win32.zip' );
+			die $win32_build_zip;
 			my $e = Archive::Extract->new( archive => $win32_build_zip );
 			$e->extract; 
 
@@ -39,8 +40,7 @@ sub alien_do_commands {
 		} else {
 			$self->SUPER::alien_do_commands($phase);
 		}
-	}
-	else {
+	} else {
 		$self->SUPER::alien_do_commands($phase);
 		if( $phase eq 'build' ) {
 			# after build
