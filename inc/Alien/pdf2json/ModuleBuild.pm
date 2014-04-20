@@ -37,6 +37,7 @@ sub alien_do_commands {
 			copy( $src_pdf2json, $target_pdf2json );
 			return 1;
 		} else {
+			return 1 if( $phase eq 'test' );
 			$self->SUPER::alien_do_commands($phase);
 		}
 	} else {
