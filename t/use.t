@@ -14,7 +14,7 @@ die "$0: fork: $!" unless defined $pid;
 if( $pid == 0 ) {
   # child
   open STDERR, ">&", \*STDOUT  or die "$0: open: $!";
-  exec $p->pdf2json_path, "-help";
+  exec({$p->pdf2json_path} "-help") or die "exec: $!";
 } else {
   my $result = join "", <$read_pdf2json>;
   like($result, qr/pdf2json version/, 'can run pdf2json');
