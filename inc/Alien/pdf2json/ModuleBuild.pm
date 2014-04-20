@@ -16,9 +16,9 @@ sub alien_do_commands {
 	my $bin_dir = File::Spec->catfile( $dir, 'bin' );
 
 	if( $phase eq 'build' ) {
-			mkdir $bin_dir;
+			mkdir $bin_dir; # make ./bin/ in working directory
 	}
-	if( $self->is_windowsish() || 1 ) {
+	if( $self->is_windowsish ) {
 		if( $phase eq 'build' ) {
 			# extract ../inc/pdf2json-0.68-win32.zip
 			my $win32_build_zip = glob File::Spec->catfile( $dir, '..', 'inc', '*-win32.zip' );
@@ -31,13 +31,14 @@ sub alien_do_commands {
 			return 1;
 		} elsif(  $phase eq 'install' ) {
 			my $target_bin = File::Spec->catfile( $self->alien_library_destination, 'bin' );
-			my $target_pdf2json = File::Spec->catfile( $target_bin, 'pdf2json.exe' );
-			my $src_pdf2json = File::Spec->catfile( $bin_dir, 'pdf2json.exe' );
 			mkdir $target_bin;
+
+			my $src_pdf2json = File::Spec->catfile( $bin_dir, 'pdf2json.exe' );
+			my $target_pdf2json = File::Spec->catfile( $target_bin, 'pdf2json.exe' );
+
 			copy( $src_pdf2json, $target_pdf2json );
 			return 1;
 		} else {
-			return 1 if( $phase eq 'test' );
 			$self->SUPER::alien_do_commands($phase);
 		}
 	} else {
