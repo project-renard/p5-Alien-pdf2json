@@ -15,13 +15,13 @@ sub alien_do_commands {
 		my $dir = $self->config_data( 'working_directory' );
 		# TODO extract inc/pdf2json-0.68-win32.zip
 		if( $phase eq 'build' ) {
-			# nop
-			return 1;
-		} elsif(  $phase eq 'install' ) {
 			use DDP; p $CWD;
 			use DDP; p $self->alien_library_destination;
 			die $CWD;
 			die $self->alien_library_destination;
+			# nop
+			return 1;
+		} elsif(  $phase eq 'install' ) {
 			return 1;
 		} else {
 			$self->SUPER::alien_do_commands($phase);
