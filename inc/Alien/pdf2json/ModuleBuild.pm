@@ -44,10 +44,9 @@ sub alien_do_commands {
 		my $ret = $self->SUPER::alien_do_commands($phase);
 		if( $phase eq 'build' ) {
 			# after build
-			my $pdf2json_src = File::Spec->catfile( $bin_dir, 'pdf2json' );
-			my $pdf2json_tgt = File::Spec->catfile( $dir, 'src', 'pdf2json' );
+			my $pdf2json_src = File::Spec->catfile( $dir, 'src', 'pdf2json' );
+			my $pdf2json_tgt = File::Spec->catfile( $bin_dir, 'pdf2json' );
 
-			use DDP; p $pdf2json_tgt;
 			# needed for test to pass
 			copy $pdf2json_src, $pdf2json_tgt;
 		}
