@@ -8,14 +8,11 @@ use Archive::Extract;
 use File::Copy;
 use File::chdir;
 
-sub is_windowsish {
-	1;
-}
 
 sub alien_do_commands {
   my ($self, $phase) = @_;
 	use DDP; p $phase;
-	if( $self->is_windowsish ) {
+	if( $self->is_windowsish || 1 ) {
 		my $dir = $self->config_data( 'working_directory' );
 		# TODO extract inc/pdf2json-0.68-win32.zip
 		if( $phase eq 'install' ) {
