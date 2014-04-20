@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Module::Build 0.3601;
-use lib qw{inc}; use Alien::pdf2json::ModuleBuild;
+use lib qw{inc}; use inc::Alien::pdf2json::ModuleBuild;
 
 my %module_build_args = (
   "alien_name" => "pdf2json",
@@ -59,6 +59,6 @@ unless ( eval { Module::Build->VERSION(0.4004) } ) {
   $module_build_args{build_requires} = \%fallback_build_requires;
 }
 
-my $build = Alien::pdf2json::ModuleBuild->new(%module_build_args);
+my $build = inc::Alien::pdf2json::ModuleBuild->new(%module_build_args);
 
 $build->create_build_script;

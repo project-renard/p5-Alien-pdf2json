@@ -11,3 +11,5 @@ sub alien_do_commands {
   use DDP; p $phase;
   $self->SUPER::alien_do_commands($phase);
 }
+
+1;
