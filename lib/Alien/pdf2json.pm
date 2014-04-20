@@ -4,6 +4,12 @@ use strict;
 use warnings;
 
 use parent 'Alien::Base';
+use File::Spec;
+
+sub pdf2json_path {
+  my ($self) = @_;
+  File::Spec->catfile( $self->dist_dir , 'bin', 'pdf2json' );
+}
 
 1;
 
@@ -16,13 +22,6 @@ Alien::pdf2json - Alien package for the pdf2json PDF extraction library
 =head1 LICENSE
 
 pdf2json is licensed under GNU GPL v2.
-
-=head1 COPYRIGHT
-
-Copyright 2014 Zakariyya Mughal.
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the Artistic License version 2.0.
 
 =head1 SEE ALSO
 
