@@ -44,6 +44,7 @@ my %module_build_args = (
     "bin/pdf2json"
   ],
   "test_requires" => {
+    "IO::Select" => 0,
     "IPC::Open3" => 0,
     "Symbol" => 0,
     "Test::More" => 0
@@ -52,6 +53,7 @@ my %module_build_args = (
 
 
 my %fallback_build_requires = (
+  "IO::Select" => 0,
   "IPC::Open3" => 0,
   "Symbol" => 0,
   "Test::More" => 0
