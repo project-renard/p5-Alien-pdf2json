@@ -16,7 +16,9 @@ sub alien_do_commands {
 		my $dir = $self->config_data( 'working_directory' );
 		# TODO extract inc/pdf2json-0.68-win32.zip
 		die "noooo!";
-		if( $phase eq 'install' ) {
+		if( $phase eq 'build' ) {
+			# nop
+		} elsif(  $phase eq 'install' ) {
 			use DDP; p $CWD;
 			use DDP; p $self->alien_library_destination;
 		} else {
