@@ -47,8 +47,9 @@ sub alien_do_commands {
 			my $pdf2json_src = File::Spec->catfile( $bin_dir, 'pdf2json' );
 			my $pdf2json_tgt = File::Spec->catfile( $dir, 'src', 'pdf2json' );
 
-			copy $pdf2json_src, $pdf2json_tgt;
+			use DDP; p $pdf2json_tgt;
 			# needed for test to pass
+			copy $pdf2json_src, $pdf2json_tgt;
 		}
 		return $ret;
 	}
