@@ -49,6 +49,7 @@ sub alien_do_commands {
 
 			# needed for test to pass
 			copy $pdf2json_src, $pdf2json_tgt;
+			chmod '0755', $pdf2json_tgt; # rwxr-xr-x
 		}
 		return $ret;
 	}
