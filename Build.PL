@@ -45,6 +45,7 @@ my %module_build_args = (
   ],
   "test_requires" => {
     "IPC::Open3" => 0,
+    "Symbol" => 0,
     "Test::More" => 0
   }
 );
@@ -52,6 +53,7 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "IPC::Open3" => 0,
+  "Symbol" => 0,
   "Test::More" => 0
 );
 

@@ -4,6 +4,7 @@ author:
   - 'Zakariyya Mughal <zmughal@cpan.org>'
 build_requires:
   IPC::Open3: 0
+  Symbol: 0
   Test::More: 0
 configure_requires:
   Alien::Base: 0.002
