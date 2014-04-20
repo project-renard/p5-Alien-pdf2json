@@ -22,12 +22,11 @@ sub alien_do_commands {
 		if( $phase eq 'build' ) {
 			# extract ../inc/pdf2json-0.68-win32.zip
 			my $win32_build_zip = glob File::Spec->catfile( $dir, '..', 'inc', '*-win32.zip' );
-			die $win32_build_zip;
 			my $e = Archive::Extract->new( archive => $win32_build_zip );
 			$e->extract; 
 
 			# move from ./pdf2json.exe to ./bin/pdf2json.exe
-			move( File::Spec->catfile( $dir, 'pdf2json.exe'), File::Spec->catfile( $bin_dir,'pdf2json.exe') )
+			move( File::Spec->catfile( $dir, 'pdf2json.exe'), File::Spec->catfile( $bin_dir,'pdf2json.exe') );
 
 			return 1;
 		} elsif(  $phase eq 'install' ) {
