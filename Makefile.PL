@@ -35,7 +35,6 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "IO::Select" => 0,
     "IPC::Open3" => 0,
     "Symbol" => 0,
     "Test::More" => 0
@@ -51,7 +50,6 @@ my %FallbackPrereqs = (
   "Alien::Base" => "0.002",
   "File::ShareDir" => "1.03",
   "File::Spec" => 0,
-  "IO::Select" => 0,
   "IPC::Open3" => 0,
   "Path::Class" => "0.013",
   "Symbol" => 0,

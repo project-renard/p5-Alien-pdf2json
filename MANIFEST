@@ -2,6 +2,7 @@
 Build.PL
 Changes
 LICENSE
+LICENSE.pdf2json
 MANIFEST
 META.yml
 Makefile.PL
@@ -13,5 +14,4 @@ inc/pdf2json-0.68-win32.zip
 inc/pdf2json-0.68.tar.gz
 lib/Alien/pdf2json.pm
 t/use.t
-test.json
 tool/create-source-package
