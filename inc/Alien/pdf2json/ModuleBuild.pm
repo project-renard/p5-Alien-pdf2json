@@ -19,6 +19,8 @@ sub alien_do_commands {
 		} elsif(  $phase eq 'install' ) {
 			use DDP; p $CWD;
 			use DDP; p $self->alien_library_destination;
+			die $self->alien_library_destination;
+			return 1;
 		} else {
 			$self->SUPER::alien_do_commands($phase);
 		}
