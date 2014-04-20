@@ -9,7 +9,6 @@ use File::Copy;
 use File::chdir;
 use File::Spec;
 
-
 sub alien_do_commands {
   my ($self, $phase) = @_;
 	my $dir = $self->config_data( 'working_directory' );
@@ -42,7 +41,7 @@ sub alien_do_commands {
 			$self->SUPER::alien_do_commands($phase);
 		}
 	} else {
-		$self->SUPER::alien_do_commands($phase);
+		my $ret = $self->SUPER::alien_do_commands($phase);
 		if( $phase eq 'build' ) {
 			# after build
 			my $pdf2json_src = File::Spec->catfile( $bin_dir, 'pdf2json' );
@@ -51,6 +50,7 @@ sub alien_do_commands {
 			copy $pdf2json_src, $pdf2json_tgt;
 			# needed for test to pass
 		}
+		return $ret;
 	}
 }
 
