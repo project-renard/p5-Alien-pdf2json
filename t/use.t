@@ -5,8 +5,8 @@ use warnings;
 
 BEGIN{  use_ok 'Alien::pdf2json' }
 
-
 my $p = Alien::pdf2json->new;
+diag $p->pdf2json_path;
 
 my $pid = open my $read_pdf2json, "-|";
 die "$0: fork: $!" unless defined $pid;
