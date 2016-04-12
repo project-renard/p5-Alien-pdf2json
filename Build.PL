@@ -17,7 +17,6 @@ my %module_build_args = (
   },
   "configure_requires" => {
     "Alien::Base::ModuleBuild" => "0.002",
-    "ExtUtils::MakeMaker" => 0,
     "File::ShareDir" => "1.03",
     "Path::Class" => "0.013"
   },

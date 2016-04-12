@@ -5,7 +5,6 @@ LICENSE
 LICENSE.pdf2json
 MANIFEST
 META.yml
-Makefile.PL
 README
 bin/pdf2json
 dist.ini
