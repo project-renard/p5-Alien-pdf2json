@@ -8,7 +8,14 @@ Alien::pdf2json
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 METHODS
+
+=head2 pdf2json_path
+
+Returns a C<Str> which contains the absolute path
+to the C<pdf2json> binary.
 
 =head1 NAME
 
@@ -20,7 +27,13 @@ pdf2json is licensed under GNU GPL v2.
 
 =head1 SEE ALSO
 
-L<pdf2json|https://code.google.com/p/pdf2json/>
+=over 4
+
+=item * L<pdf2json|https://code.google.com/p/pdf2json/>
+
+=item * L<pdf2json Git repository|https://github.com/flexpaper/pdf2json>
+
+=back
 
 =head1 AUTHOR
 
