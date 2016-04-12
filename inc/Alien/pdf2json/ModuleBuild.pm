@@ -12,7 +12,6 @@ use File::Spec;
 sub alien_do_commands {
   my ($self, $phase) = @_;
 	my $dir = $self->config_data( 'working_directory' );
-	use DDP; p $dir;
 	my $bin_dir = File::Spec->catfile( $dir, 'bin' );
 
 	if( $phase eq 'build' ) {
