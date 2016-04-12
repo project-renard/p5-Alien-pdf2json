@@ -27,6 +27,13 @@ Alien::pdf2json
 
 version 0.001
 
+=head1 METHODS
+
+=head2 pdf2json_path
+
+Returns a C<Str> which contains the absolute path
+to the C<pdf2json> binary.
+
 =head1 NAME
 
 Alien::pdf2json - Alien package for the pdf2json PDF extraction library
