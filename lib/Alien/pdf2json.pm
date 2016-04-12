@@ -44,15 +44,13 @@ pdf2json is licensed under GNU GPL v2.
 
 =head1 SEE ALSO
 
-=begin :list
-
-
-
-=end :list
+=over 4
 
 =item * L<pdf2json|https://code.google.com/p/pdf2json/>
 
 =item * L<pdf2json Git repository|https://github.com/flexpaper/pdf2json>
+
+=back
 
 =head1 AUTHOR
 
