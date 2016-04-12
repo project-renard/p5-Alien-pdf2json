@@ -50,9 +50,9 @@ pdf2json is licensed under GNU GPL v2.
 
 =end :list
 
-* L<pdf2json|https://code.google.com/p/pdf2json/>
+=item * L<pdf2json|https://code.google.com/p/pdf2json/>
 
-* L<pdf2json Git repository|https://github.com/flexpaper/pdf2json>
+=item * L<pdf2json Git repository|https://github.com/flexpaper/pdf2json>
 
 =head1 AUTHOR
 
