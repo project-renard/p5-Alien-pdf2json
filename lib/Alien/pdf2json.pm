@@ -6,6 +6,12 @@ use warnings;
 use parent 'Alien::Base';
 use File::Spec;
 
+=method pdf2json_path
+
+Returns a C<Str> which contains the absolute path
+to the C<pdf2json> binary.
+
+=cut
 sub pdf2json_path {
   my ($self) = @_;
   File::Spec->catfile( $self->dist_dir , 'bin', 'pdf2json' );
