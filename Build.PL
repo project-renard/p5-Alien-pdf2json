@@ -26,7 +26,7 @@ my %module_build_args = (
     "Zakariyya Mughal <zmughal\@cpan.org>"
   ],
   "dist_name" => "Alien-pdf2json",
-  "dist_version" => "0.001",
+  "dist_version" => "0.002",
   "license" => "perl",
   "module_name" => "Alien::pdf2json",
   "recursive_test_files" => 1,

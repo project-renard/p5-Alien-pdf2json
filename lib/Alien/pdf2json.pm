@@ -1,5 +1,5 @@
 package Alien::pdf2json;
-$Alien::pdf2json::VERSION = '0.001';
+$Alien::pdf2json::VERSION = '0.002';
 use strict;
 use warnings;
 
@@ -25,7 +25,7 @@ Alien::pdf2json
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 METHODS
 

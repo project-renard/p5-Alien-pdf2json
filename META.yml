@@ -29,4 +29,4 @@ requires:
 resources:
   homepage: https://github.com/project-renard/p5-Alien-pdf2json
   repository: https://github.com/project-renard/p5-Alien-pdf2json.git
-version: '0.001'
+version: '0.002'
